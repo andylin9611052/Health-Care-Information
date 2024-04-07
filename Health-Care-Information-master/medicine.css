@@ -1,0 +1,82 @@
+
+body { 
+    font-family: Arial, sans-serif; 
+    background-image: url("medicine\ bgp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.patient-info { 
+    background-color: #000; /* 改成黑色背景 */
+    color: #fff; /* 改成白色文字 */
+    padding: 20px;
+    margin-top: 20px; /* 往下移一點，你可以根據需要調整這個值 */
+    transform: skew(30deg); /* 讓元素變成平行四邊形，你可以根據需要調整這個值 */
+}
+
+.patient-info .content > * { 
+    border-left: 1px dashed #fff; /* 在左邊添加白色虛線 */
+    border-right: 1px dashed #fff; /* 在右邊添加白色虛線 */
+    padding: 0 10px; /* 添加左右內距，讓虛線與內容有一些間距 */
+    transform: skew(-30deg);
+}
+
+
+.patient-info header { 
+    display: flex;
+    justify-content: space-between;
+}
+.patient-info header div {
+    flex-basis: 20%;
+}
+.medicines {
+    position: sticky;
+    margin-top: 10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: auto; /* 添加垂直滾動條 */
+    height: 50vh; /* 設定最大高度，防止內容過長 */
+    background-color: #fff;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 2; /* 保持在最上層 */
+}
+
+th, td {
+    text-align: left;
+    padding: 24px 8px;
+}
+
+th {
+    background-color: #86D0EF;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 3; /* 保持在最上層 */
+}
+.medicine-item {
+    cursor: pointer;
+    position: sticky;
+}
+.medicine-details {
+    display: none;
+    position: sticky;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+    margin-top: 40px; /* 設定為藥品項目的高度，避免重疊 */
+}
+
+.selected-row {
+    background-color: #c8e6c9;
+}
+.button-group {
+    display: flex; /* 讓按鈕並排顯示 */
+    justify-content: center; /* 讓按鈕在水平方向上居中 */
+    margin-top: 80vh; /* 在上方添加一點距離 */
+}

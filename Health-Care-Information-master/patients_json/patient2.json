@@ -1,0 +1,38 @@
+{
+    "id": "002",
+    "name": "張小華",
+    "room": "101",
+    "admissionDate": "2023-01-02",
+    "medicines": [
+      {
+        "serialNumber": "001",
+        "name": "Aliskiren",
+        "dosageForm": "劑型/劑量",
+        "usage": "每日一次",
+        "administrationTime": "16:00",
+        "isMedicationGiven": true
+      },
+      {
+        "serialNumber": "002",
+        "name": "藥品B",
+        "dosageForm": "劑型/劑量",
+        "usage": "每日三次",
+        "administrationTime": "8:00 / 15:00 / 22:00",
+        "isMedicationGiven": false
+      },
+      {
+        "serialNumber": "003",
+        "name": "藥品D",
+        "dosageForm": "劑型/劑量",
+        "usage": "每日三次",
+        "administrationTime": "8:00 / 15:00 / 22:00",
+        "isMedicationGiven": false
+      }
+      
+    ],
+    "BT":"63",
+    "BP_high":"131",
+    "BP_low":"81",
+    "HR":"38.1"
+  }
+  
